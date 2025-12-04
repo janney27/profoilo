@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+  background: linear-gradient(rgb(4, 61, 70) 10%,rgb(189, 188, 188) 70%,rgb(1, 74, 83) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: contain;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3 ease;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #e9e9e9;
+}
+
+.nav-icons i {
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav-center{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-center a {
+    margin: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #ccc8c8;
+    font-weight: 500;
+}
+
+.nav-center a:hover {
+    color: rgb(12, 13, 14);
+}
+.facts-section, .skills-section, .testimonials-section, .page-title-section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #070707;
+}
+
+.section-description {
+    text-align: center;
+    color: #ffffff;
+   font-size: larger;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* General Link Color for light theme (Optional) */
+a {
+    color: #67aa91;
+ }
+
+/* About Page Title and Details */
+.about-main-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.about-main-image h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.about-main-image p {
+    color: #dddbdd;
+    margin-bottom: 25px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.details-list {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto 40px;
+    
+}
+
+.details-list span {
+    color: #2dfadb; /* Color the bullet points/arrows */
+
+    font-weight: bold;
+    margin-right: 8px;
+}
+.details-list p{
+    color: #080808;
+}
+
+
+.skill-bar-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.skill-name, .skill-percentage {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+    color: #444;
+}
+
+.skill-percentage {
+    float: right;
+}
+
+.progress-bar {
+    background: #e9e9e9;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #3ac7b2; /* Mint color for the bar fill */
+    transition: width 1.5s ease-in-out; /* Smooth animation effect */
+    border-radius: 5px;
+}
+
+/* Set the individual widths based on the percentage from the HTML */
+.html-fill { width: 80%; }
+.css-fill { width: 50%; }
+.js-fill { width: 15%; }
+.php-fill { width: 40%; }
+.wordpress-fill { width: 90%; }
+.drawing-fill { width: 90%; }
+
+
+.facts-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 30px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.fact-number {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #3ac7b2; /* Mint color for the numbers */
+    margin-bottom: 5px;
+}
+
+.fact-label {
+    font-size: 0.9em;
+    color: #6c757d;
+    text-transform: uppercase;
+}
+
+
+.testimonials-section {
+    padding: 60px 20px;
+    background-color: transparent;
+}
+
+.testimonial-card {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.testimonial-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #fff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-card h4 {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.testimonial-card .role {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .stars {
+    color: #ffc107; /* Yellow stars */
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Dots for the slider */
+.dots-container {
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: #3ac7b2; 
+}
+
+/* ========================================= */
+/* 5. RESPONSIVENESS (Mobile Adjustments) */
+/* ========================================= */
+
+@media (max-width: 768px) {
+    .facts-section, .skills-section, .testimonials-section {
+        padding: 40px 15px;
+    }
+    
+
+    .facts-grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px;
+    }
+
+    .fact-number {
+        font-size: 2.5em;
+ }
+}
